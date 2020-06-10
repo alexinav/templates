@@ -63,3 +63,12 @@ Get-AzureRmResourceGroup
 #                 "destinationAddressPrefix": "*",
 #                 "destinationPortRange": "3389"
 #             }
+
+
+###############################
+
+#Same RG
+#Same VirtualNetwork
+#Same SubNet
+#Same NSG
+#Same Region
