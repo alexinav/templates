@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "alexvm01678"
+        },
+        "networkSecurityGroupName": {
+            "value": "alexvm01-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "SSH",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "22"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "Subnet-App"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/cc4f3a29-5039-43c7-87dd-a18084b3f96b/resourceGroups/nGroup/providers/Microsoft.Network/virtualNetworks/alexVNET"
+        },
+        "publicIpAddressName": {
+            "value": "alexvm01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "alexvm01"
+        },
+        "virtualMachineComputerName": {
+            "value": "alexvm01"
+        },
+        "virtualMachineRG": {
+            "value": "nGroup"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "alex"
+        },
+        "adminPassword": {
+            "value": "none"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "02:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Romance Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Disabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        }
+    }
+}
