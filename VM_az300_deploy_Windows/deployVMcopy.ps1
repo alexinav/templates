@@ -1,12 +1,12 @@
 <#
 .SYNOPSIS
-    Deploys a template to Azure
+    Deploys a template to Azure.
 
 .DESCRIPTION
     Deploys an Azure Resource Mamager template
 
 .PARAMETER subscriptionId
-    The subscription id where the template will be deployed.
+    The subscription id where the template will be deployed
 
 .PARAMETER resourceGroupName
     The resource group where the template will be deployed. Can be the name of an existing or new resource group.
