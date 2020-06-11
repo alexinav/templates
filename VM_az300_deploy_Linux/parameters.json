@@ -32,7 +32,7 @@
             "value": "Subnet-App"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/cc4f3a29-5039-43c7-87dd-a18084b3f96b/resourceGroups/nGroup/providers/Microsoft.Network/virtualNetworks/alexVNET"
+            "value": "/subscriptions/<subscriptionId>/resourceGroups/nGroup/providers/Microsoft.Network/virtualNetworks/alexVNET"
         },
         "publicIpAddressName": {
             "value": "alexvm01-ip"
